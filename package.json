@@ -1,0 +1,55 @@
+{
+  "name": "skillup",
+  "version": "1.0.0",
+  "description": "SkillUp - Plataforma de Microaprendizado",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www",
+    "seed": "node seeders/seed.js",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
+  },
+  "keywords": [
+    "microlearning",
+    "education",
+    "express",
+    "ejs"
+  ],
+  "author": "SkillUp Team",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^17.3.1",
+    "ejs": "^3.0.2",
+    "express": "^4.22.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.19.0",
+    "ffprobe-static": "^3.1.0",
+    "get-video-duration": "^5.0.0",
+    "http-errors": "~1.6.3",
+    "morgan": "^1.10.1",
+    "multer": "^2.0.2",
+    "mysql2": "^3.17.3",
+    "pdfkit": "^0.18.0",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@vitest/coverage-v8": "^3.2.4",
+    "@vitest/ui": "^3.2.4",
+    "eslint": "^10.4.1",
+    "globals": "^17.6.0",
+    "nodemon": "^3.1.0",
+    "supertest": "^7.2.2",
+    "vitest": "^3.2.4"
+  }
+}
