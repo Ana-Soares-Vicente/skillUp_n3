@@ -18,7 +18,7 @@ test.describe('Módulo de Tópicos (Admin)', () => {
     // Redireciona para a listagem
     await expect(page).toHaveURL(/\/admin\/topicos/);
     // Verifica que o tópico aparece na página
-    await expect(page.locator('text=Tópico E2E')).toBeVisible();
+    await expect(page.locator('text=Tópico E2E').first()).toBeVisible();
   });
 
   test('Tópico criado aparece na listagem', async ({ page }) => {
